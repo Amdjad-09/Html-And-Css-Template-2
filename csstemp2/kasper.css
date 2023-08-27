@@ -413,3 +413,217 @@ header .container nav .form i {
 }
 
 /* End Design*/
+/* Start Portfolio */
+.portfolio {
+    padding:var(--section-padding) 0px;
+}
+.portfolio .container .shuffle {
+    display:flex;
+    justify-content:center
+}
+.portfolio .container .shuffle li {
+    padding:10px
+}
+.portfolio .container .shuffle li:first-of-type {
+    color:white;
+    background-color:var(--main-color)
+}
+.portfolio .imgs {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:60px
+}
+.portfolio .imgs .box {
+    position:relative;
+    overflow:hidden
+}
+.portfolio .imgs .box:hover .caption {
+    bottom:0%
+}
+.portfolio .imgs .box:hover img {
+    transform:rotate(3deg) scale(1.1);
+    -webkit-transform:rotate(3deg) scale(1.1);
+    -moz-transform:rotate(3deg) scale(1.1);
+    -ms-transform:rotate(3deg) scale(1.1);
+    -o-transform:rotate(3deg) scale(1.1);
+}
+@media (min-width:768px) {
+    .portfolio .box {
+        flex-basis:50%
+    }
+}
+@media (min-width:1199px) {
+    .portfolio .box {
+        flex-basis:25%
+    }
+}
+.portfolio .imgs .box img {
+    max-width:100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.portfolio .imgs .box .caption {
+    position:absolute;
+    left:0;
+    padding:15px;
+    bottom:-100%;
+    background-color:white;
+    width:100%;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
+    -ms-transition:0.3s;
+    -o-transition:0.3s;
+}
+.portfolio .imgs .box .caption h4 {
+    font-weight:normal;
+    margin-bottom:10px
+}
+.portfolio .imgs .box .caption p {
+    color:var(--main-color)
+}
+.portfolio .more {
+    padding:15px 20px;
+    color:white;
+    background-color:var(--main-color);
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:30px auto;
+    display: block;
+    width:fit-content
+}
+/* End Portfolio */
+/* Start Video */
+.video {
+    position: relative;
+}
+.video video {
+    max-width: 100%;
+}
+.video::before {
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.6;
+}
+.video .text {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    background-color:var(--transparent-main-color);
+    width:100%;
+    padding:50px;
+    text-align:center;
+    color:white;
+}
+.video .text h2 {
+    font-weight:normal;
+    margin:0 0 30px;
+}
+.video .text p {
+    margin-bottom:30px
+}
+.video .text button {
+    background-color:black;
+    padding:10px;
+    color:white;
+    border:none
+}
+/* End Video */
+/* Start About */
+.about {
+    padding-top:var(--section-padding);
+    overflow:hidden;
+    text-align:center
+
+}
+.about img {
+    max-width: 100%;
+    position: relative;
+    bottom:-120px;
+    margin-top:-120px;
+}
+@media (max-width:767px) {
+    .about img {
+        margin-top:-60px;
+        bottom:-60px
+    }
+}
+/* End About */
+
+/* Start Stats */
+.stats {
+    padding: var(--section-padding) 0px;
+    position:relative;
+    background-image:url("../img2/stats.png");
+    background-size:cover;
+}
+.stats::before {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgb(0,0,0,0.8);
+}
+.stats .container {
+    position: relative;
+    display:flex;
+    flex-wrap:wrap;
+}
+.stats .container .box {
+    color:white;
+    padding:50px;
+    background-color:var(--transparent-main-color);
+    text-align:center
+}
+@media (max-width:767px) {
+    .stats .box {
+        flex-basis:100%;
+        margin-bottom:20px
+    }
+}
+@media (min-width:768px) {
+    .stats .box {
+        flex-basis:50%
+    }
+}
+@media (min-width:1199px) {
+    .stats .box {
+        flex-basis:25%
+    }
+}
+.stats .container .box i {
+    display:flex;
+    background:black;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    margin:0 auto 30px;
+}
+.stats .container .box h2 {
+    font-size:40px;
+    margin-bottom:30px
+}
+.stats .container .box p {
+    font-size:14px;
+}
+/* End Stats */
