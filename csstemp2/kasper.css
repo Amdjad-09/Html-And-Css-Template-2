@@ -627,3 +627,136 @@ header .container nav .form i {
     font-size:14px;
 }
 /* End Stats */
+/* Start Skills */
+.skills {
+    padding:var(--section-padding) 0px;
+}
+.skills .container {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap
+}
+@media (min-width:992px) {
+    .skills .container > div {
+        flex-basis: 45%;
+    }
+}
+.skills .container > div > h2 {
+    margin: 0 auto 30px;
+    font-weight:normal;
+    text-align: center;
+    font-size: 20px;
+}
+.skills .container > div > p {
+    color:var(--grey-text-color);
+    line-height:var(--pragraph-line-height);
+    text-align:center;
+    margin-bottom:50px
+}
+.skills .container .commentes .box {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+.skills .container .commentes .box .text {
+    display:flex;
+    flex-direction: column;
+    border-bottom:1px solid #ccc
+
+}
+.skills .container .commentes .box .text p {
+    line-height:1.8;
+    margin-bottom: 10px;
+}
+.skills .container .commentes .box img {
+ width:100px;
+ border-radius:50%;
+ -webkit-border-radius:50%;
+ -moz-border-radius:50%;
+ -ms-border-radius:50%;
+ -o-border-radius:50%;
+ margin-right:50px
+}
+@media (max-width:767px) {
+    .skills .container .commentes .box {
+        text-align: center;
+        flex-direction:column
+    }
+    .skills .container .commentes .box img {
+        margin:0px auto 20px 
+    }
+}
+.skills .container .commentes .box span {
+    align-self: flex-end;
+    color:var(--grey-text-color);
+    font-size:14px;
+    margin-bottom:10px
+}
+.skills .container .commentes .bullets {
+    display:flex;
+    justify-content: center;
+    margin:50px 0;
+    text-align: center;
+}
+.skills .container .commentes .bullets li {
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right:10px;
+    border:1px solid #aaa
+}
+.skills .container .commentes .bullets li:nth-of-type(2) {
+    background-color:var(--main-color);
+    border-color:var(--main-color)
+}
+.skills .percen .prog {
+    margin-bottom:35px
+}
+.skills .percen .prog h4 {
+    font-weight:normal;
+    text-transform:uppercase;
+    margin-bottom:20px
+}
+.skills .percen .prog .completion {
+    width:100%;
+    height:30px;
+    background-color: #DEDADC;
+}
+.skills .percen .prog .completion span {
+    background-color:var(--main-color);
+    height: 100%;
+    position:relative;
+    display:block
+
+}
+.skills .percen .prog .completion span::before {
+    content:attr(data-progress);
+    position:absolute;
+    padding:4px 0px;
+    background-color:black;
+    width:40px;
+    text-align:center;
+    right:-19px;
+    top:-40px;
+    color:white;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+}
+.skills .percen .prog .completion span::after {
+    content:'';
+    position: absolute;
+    border-style:solid;
+    border-width:8px;
+    border-color:black transparent transparent;
+    right: -8px;
+    top:-15px
+}
+/* End Skills */
